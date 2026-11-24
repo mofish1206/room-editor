@@ -1,0 +1,44 @@
+{
+  "wall_thickness": 0.15,
+  "rooms": [
+    {
+      "id": "bedroom",
+      "origin": [0.0, 0.0],
+      "size": [5.0, 4.0, 2.8],
+      "doors": [
+        {"id": "door_1", "wall": "east", "offset": 1.0, "width": 0.9, "height": 2.1}
+      ],
+      "furniture": [
+        {"id": "bed_1",   "type": "bed",   "size": [2.0, 1.5, 0.5],  "pos": [1.2, 1.0], "yaw": 0, "fixed": false},
+        {"id": "desk_1",  "type": "desk",  "size": [1.2, 0.6, 0.75], "pos": [4.0, 3.2], "yaw": 90, "fixed": false},
+        {"id": "chair_1", "type": "chair", "size": [0.5, 0.5, 0.9],  "pos": [3.6, 2.6], "yaw": 45, "fixed": false},
+        {"id": "chair_2", "type": "chair", "size": [0.5, 0.5, 0.9],  "pos": [4.4, 2.6], "yaw": 135, "fixed": false}
+      ]
+    },
+    {
+      "id": "living_room",
+      "origin": [5.0, 0.0],
+      "size": [6.0, 4.0, 2.8],
+      "skip_walls": ["west"],
+      "doors": [
+        {"id": "door_1", "wall": "south", "offset": 5.0, "width": 1.0, "height": 2.1}
+      ],
+      "furniture": [
+        {"id": "sofa_1",  "type": "sofa",  "size": [2.2, 0.9, 0.8],  "pos": [3.0, 0.8], "yaw": 0, "fixed": false},
+        {"id": "table_1", "type": "table", "size": [1.0, 0.6, 0.45], "pos": [3.0, 2.0], "yaw": 0, "fixed": false}
+      ]
+    },
+    {
+      "id": "bathroom",
+      "origin": [0.0, 4.0],
+      "size": [3.0, 3.0, 2.8],
+      "doors": [
+        {"id": "door_1", "wall": "south", "offset": 1.0, "width": 0.9, "height": 2.1}
+      ],
+      "furniture": [
+        {"id": "toilet_1",   "type": "toilet",   "size": [0.6, 0.6, 1.0],  "pos": [1.2, 2.7], "yaw": 0, "fixed": true},
+        {"id": "sink_1",   "type": "toilet",   "size": [0.6, 0.6, 1.0],  "pos": [0.3, 2.0], "yaw": 0, "fixed": true}
+        ]
+    }
+  ]
+}
